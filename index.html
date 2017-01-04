@@ -1,0 +1,23 @@
+
+ <!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Filma4ok.Ru - App</title>
+   <script src="http://filma4ok.ru/js/jquery.js"></script>
+ </head>
+ <body>  
+
+ 
+ <script language="javascript" type="text/javascript">
+ function resizeIframe(obj) {
+ obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+ }
+ setInterval(function() {resizeIframe(document.getElementById('framelist'))},200 )
+</script>
+
+<iframe id="framelist" src="http://filma4ok.ru/" width="100%" frameborder="0" scrolling="no" style="border: 0; box-shadow: 0 1px 2px rgba(6, 33, 63, 0.13);"></iframe>
+
+
+ </body>
+</html>
